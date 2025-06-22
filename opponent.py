@@ -20,9 +20,9 @@ def greedy_opponent(state):
     moves = []
     ox, oy = state.opponent_x, state.opponent_y
     if state.possesion == 1:
-        px, py = state.player1_x, state.player1_y
+        px, py = state.player_1_x, state.player_1_y
     else:
-        px, py = state.player2_x, state.player2_y
+        px, py = state.player_2_x, state.player_2_y
 
     dx = px - ox
     dy = py - oy
